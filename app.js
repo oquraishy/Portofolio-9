@@ -21,8 +21,6 @@ app.listen(port, function(req, res){
   console.log("Server started on port "3000", Go rock...");
 });
 
-mongoose.connect ("mongodb+srv://oquraishy:Bigdreams10@todolist.hrjnlhb.mongodb.net/todolistDB", {useNewUrlParser: true});
-
 const itemsSchema = {
   name: String
 };
