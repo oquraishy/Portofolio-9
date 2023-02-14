@@ -16,9 +16,8 @@ mongoose.set("strictQuery", false);
 
 mongoose.connect ("mongodb+srv://oquraishy:Bigdreams10@todolist.hrjnlhb.mongodb.net/todolistDB", {useNewUrlParser: true});
 
-const port = process.env.PORT || 3000;
-app.listen(port, function(req, res){
-  console.log("Server started on port "3000", Go rock...");
+app.listen(3000, function(){
+  console.log("Server started on port "3000");
 });
 
 const itemsSchema = {
