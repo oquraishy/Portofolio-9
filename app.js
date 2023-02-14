@@ -12,6 +12,15 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+mongoose.set("strictQuery", false);
+
+mongoose.connect ("mongodb+srv://oquraishy:Bigdreams10@todolist.hrjnlhb.mongodb.net/todolistDB", {useNewUrlParser: true});
+
+const port = process.env.PORT || 3000;
+app.listen(port, function(req, res){
+  console.log("Server started on port "3000", Go rock...");
+});
+
 mongoose.connect ("mongodb+srv://oquraishy:Bigdreams10@todolist.hrjnlhb.mongodb.net/todolistDB", {useNewUrlParser: true});
 
 const itemsSchema = {
