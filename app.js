@@ -14,10 +14,6 @@ app.use(express.static("public"));
 
 mongoose.connect ("mongodb+srv://oquraishy:Bigdreams10@todolist.hrjnlhb.mongodb.net/todolistDB", {useNewUrlParser: true});
 
-app.listen(3000, function(){
-  console.log("Server started on port "3000");
-});
-
 const itemsSchema = {
   name: String
 };
